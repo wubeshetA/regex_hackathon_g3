@@ -9,7 +9,7 @@
 import re
 
 
-def emailChecker():
+def phone_numChecker():
     match = re.compile(r"\+([0-9]){3}[\s|-]?([0-9]){3}[\s|-]?([0-9]){3}[\s|-]?([0-9]){2,4}")  # Your Regex goes between the double quotes
 
     phone_num = input("Enter your phone number (Eg: +250xxx): ")
@@ -19,4 +19,4 @@ def emailChecker():
     else:
         print("Invalid phone number!")
 
-emailChecker()
+phone_numChecker()
