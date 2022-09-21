@@ -16,25 +16,25 @@ import re
 
 
 def full_name_checker():
-    """ Check if email is valid """
+    """ Check if full name is valid """
     match = re.compile(r"")  # Your Regex goes between the double quotes
-    email = input("Enter the Email: ")
+    name = input("Enter the Full Name: ")
 
-    if re.fullmatch(match, email):
-        print(f"'{email}'looks like a valid Email")
+    if re.fullmatch(match, name):
+        print(f"'{name}'looks like a valid Name")
     else:
-        print("Invalid Email")
+        print("Invalid Full name")
 
 
 def user_name_checker():
-    """ Check if email is valid """
+    """ Check if username is valid """
     match = re.compile(r"")  # Your Regex goes between the double quotes
-    email = input("Enter the Email: ")
+    username = input("Enter the Username: ")
 
-    if re.fullmatch(match, email):
-        print(f"'{email}'looks like a valid Email")
+    if re.fullmatch(match, username):
+        print(f"'{username}'looks like a valid Username")
     else:
-        print("Invalid Email")
+        print("Invalid Username")
 
 
 def email_checker():
@@ -49,47 +49,47 @@ def email_checker():
 
 
 def password_checker():
-    """ Check if email is valid """
+    """ Check if password is valid """
     match = re.compile(r"")  # Your Regex goes between the double quotes
-    email = input("Enter the Email: ")
+    password = input("Enter the Password: ")
 
-    if re.fullmatch(match, email):
-        print(f"'{email}'looks like a valid Email")
+    if re.fullmatch(match, password):
+        print(f"'{password}'looks like a valid Password")
     else:
-        print("Invalid Email")
+        print("Invalid Password")
 
 
 def DOB_checker():
     """ Check if email is valid """
     match = re.compile(r"")  # Your Regex goes between the double quotes
-    email = input("Enter the Email: ")
+    dob = input("Enter the DOB: ")
 
-    if re.fullmatch(match, email):
-        print(f"'{email}'looks like a valid Email")
+    if re.fullmatch(match, dob):
+        print(f"'{dob}'looks like a valid DOB")
     else:
-        print("Invalid Email")
+        print("Invalid DOB")
 
 
 def phone_number_checker():
     """ Check if email is valid """
     match = re.compile(r"")  # Your Regex goes between the double quotes
-    email = input("Enter the Email: ")
+    phone = input("Enter the Phone number: ")
 
-    if re.fullmatch(match, email):
-        print(f"'{email}'looks like a valid Email")
+    if re.fullmatch(match, phone):
+        print(f"'{phone}'looks like a valid Phone Number")
     else:
-        print("Invalid Email")
+        print("Invalid Phone Number")
 
 
 def id_checker():
-    """ Check if email is valid """
+    """ Check if Id is valid """
     match = re.compile(r"")  # Your Regex goes between the double quotes
-    email = input("Enter the Email: ")
+    id = input("Enter the Id: ")
 
-    if re.fullmatch(match, email):
-        print(f"'{email}'looks like a valid Email")
+    if re.fullmatch(match, id):
+        print(f"'{id}'looks like a valid Id")
     else:
-        print("Invalid Email")
+        print("Invalid Id")
 
 
 if __name__ == "__main__":
