@@ -27,14 +27,14 @@ def full_name_checker():
 
 
 def user_name_checker():
-    """ Check if email is valid """
-    match = re.compile(r"")  # Your Regex goes between the double quotes
-    email = input("Enter the Email: ")
+    """ Check if username is valid """
+    match = re.compile(r"[A-Z]{1}[a-z]+\S[A-Z]{1}[a-z]+")  # Your Regex goes between the double quotes
+    username = input("Enter the Username: ")
 
-    if re.fullmatch(match, email):
-        print(f"'{email}'looks like a valid Email")
+    if re.fullmatch(match, username):
+        print(f"'{username}'looks like a valid Username")
     else:
-        print("Invalid Email")
+        print("Invalid Username")
 
 
 def email_checker():
@@ -61,7 +61,7 @@ def password_checker():
 
 def DOB_checker():
     """ Check if date of birth is valid """
-    match = re.compile(r"/^(0?[1-9]|[12][0-9]|3[01])[\/._-](0?[1-9]|1[012])[\/._-]\d{4}$/")  # Your Regex goes between the double quotes
+    match = re.compile(r"^(0?[1-9]|[12][0-9]|3[01])[\/._-](0?[1-9]|1[012])[\/._-]\d{4}$")  # Your Regex goes between the double quotes
     DOB = input("Enter the date of birth: ")
 
     if re.fullmatch(match, DOB):
@@ -94,6 +94,9 @@ def id_Checker():
 
 if __name__ == "__main__":
     # pass
+    full_name_checker()
+    user_name_checker()
+    email_checker()
     password_checker()
     DOB_checker()
     phone_numChecker()
