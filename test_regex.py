@@ -16,14 +16,14 @@ import re
 
 
 def full_name_checker():
-    """ Check if email is valid """
-    match = re.compile(r"")  # Your Regex goes between the double quotes
-    email = input("Enter the Email: ")
+    """ Check if full name is valid """
+    match = re.compile(r"^[a-zA-Z]{1,10}\s[a-zA-Z\.?\/]{1,10}\s[a-zA-Z]{1,10}$")  # Your Regex goes between the double quotes
+    full_name = input("Enter the full name: ")
 
-    if re.fullmatch(match, email):
-        print(f"'{email}'looks like a valid Email")
+    if re.fullmatch(match, full_name):
+        print(f"'{full_name}'looks like a valid full name")
     else:
-        print("Invalid Email")
+        print("Invalid full name")
 
 
 def user_name_checker():
