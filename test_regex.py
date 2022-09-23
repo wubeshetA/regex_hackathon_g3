@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 """A script with regular expressions that can validate a registration form.
    Entries to be validated:
@@ -70,26 +70,26 @@ def DOB_checker():
         print("Invalid date of birth")
 
 
-def phone_number_checker():
-    """ Check if email is valid """
-    match = re.compile(r"")  # Your Regex goes between the double quotes
-    email = input("Enter the Email: ")
+def phone_numChecker():
+    match = re.compile(r"\+([0-9]){3}[\s|-]([0-9]){3}[\s|-]([0-9]){3}[\s|-]([0-9]){2,4}")
+    phone_num = input("Enter your phone number (Eg: +250xxx): ")
 
-    if re.fullmatch(match, email):
-        print(f"'{email}'looks like a valid Email")
+    if re.fullmatch(match, phone_num):
+        print(f"'{phone_num}'looks like a valid phone number")
     else:
-        print("Invalid Email")
+        print("Invalid phone number!")
 
 
-def id_checker():
-    """ Check if email is valid """
-    match = re.compile(r"")  # Your Regex goes between the double quotes
-    email = input("Enter the Email: ")
+def id_Checker():
+    """Validates organizational ID's"""
+    match = re.compile(r"(^[^A-Za-z]([0-9]*[a-z]*)*[^0-9]$)")  # Your Regex goes between the double quotes
 
-    if re.fullmatch(match, email):
-        print(f"'{email}'looks like a valid Email")
+    org_id = input("Enter your organization's ID: ")
+
+    if re.fullmatch(match, org_id):
+        print(f"'{org_id}'looks like a valid ID")
     else:
-        print("Invalid Email")
+        print("Invalid ID!")
 
 
 if __name__ == "__main__":
@@ -97,3 +97,7 @@ if __name__ == "__main__":
     full_name_checker()
     user_name_checker()
     email_checker()
+    password_checker()
+    DOB_checker()
+    phone_numChecker()
+    id_Checker()
