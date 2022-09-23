@@ -49,14 +49,14 @@ def email_checker():
 
 
 def password_checker():
-    """ Check if email is valid """
-    match = re.compile(r"")  # Your Regex goes between the double quotes
-    email = input("Enter the Email: ")
+    """ Check if password is valid """
+    match = re.compile(r"^(?=(?:.*[a-z]){2})(?=(?:.*[A-Z]){2})(?=(?:.*\d){2})(?=(?:.*[!@#$%^&*-]){2}).{8}$")  # Your Regex goes between the double quotes
+    email = input("Enter the Password: ")
 
     if re.fullmatch(match, email):
-        print(f"'{email}'looks like a valid Email")
+        print(f"'{email}'looks like a valid Password")
     else:
-        print("Invalid Email")
+        print("Invalid Password")
 
 
 def DOB_checker():
@@ -93,4 +93,5 @@ def id_checker():
 
 
 if __name__ == "__main__":
-    pass
+    # pass
+    password_checker()
