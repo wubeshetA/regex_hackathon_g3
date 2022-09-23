@@ -94,5 +94,6 @@ def id_checker():
 
 if __name__ == "__main__":
     # pass
-    password_checker()
     user_name_checker()
+    password_checker()
+    
