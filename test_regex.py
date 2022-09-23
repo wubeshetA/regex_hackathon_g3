@@ -27,14 +27,14 @@ def full_name_checker():
 
 
 def user_name_checker():
-    """ Check if email is valid """
-    match = re.compile(r"")  # Your Regex goes between the double quotes
-    email = input("Enter the Email: ")
+    """ Check if username is valid """
+    match = re.compile(r"[A-Z]{1}[a-z]+\S[A-Z]{1}[a-z]+")  # Your Regex goes between the double quotes
+    username = input("Enter the Username: ")
 
-    if re.fullmatch(match, email):
-        print(f"'{email}'looks like a valid Email")
+    if re.fullmatch(match, username):
+        print(f"'{username}'looks like a valid Username")
     else:
-        print("Invalid Email")
+        print("Invalid Username")
 
 
 def email_checker():
