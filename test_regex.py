@@ -94,5 +94,7 @@ def id_Checker():
 
 if __name__ == "__main__":
     # pass
+    password_checker()
+    DOB_checker()
     phone_numChecker()
     id_Checker()
