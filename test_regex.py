@@ -28,7 +28,7 @@ def full_name_checker():
 
 def user_name_checker():
     """ Check if username is valid """
-    match = re.compile(r"")  # Your Regex goes between the double quotes
+    match = re.compile(r"[A-Z]{1}[a-z]+\S[A-Z]{1}[a-z]+")  # Your Regex goes between the double quotes
     username = input("Enter the Username: ")
 
     if re.fullmatch(match, username):
