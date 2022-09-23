@@ -39,7 +39,7 @@ def user_name_checker():
 
 def email_checker():
     """ Check if email is valid """
-    match = re.compile(r"")  # Your Regex goes between the double quotes
+    match = re.compile(r"[a-z]\.[a-z]+@[a-z]+\.(email)")  # Your Regex goes between the double quotes
     email = input("Enter the Email: ")
 
     if re.fullmatch(match, email):
