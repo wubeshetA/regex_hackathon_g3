@@ -17,7 +17,7 @@ import re
 
 def full_name_checker():
     """ Check if full name is valid """
-    match = re.compile(r"^[a-zA-Z]{1,10}\s[a-zA-Z\.?\/]{1,10}\s[a-zA-Z]{1,10}$")  # Your Regex goes between the double quotes
+    match = re.compile(r"^[a-zA-Z]{3,10}\s[a-zA-Z\.?\/]{3,10}\s[a-zA-Z]{3,10}$")  # Your Regex goes between the double quotes
     full_name = input("Enter the full name: ")
 
     if re.fullmatch(match, full_name):
